@@ -27,15 +27,18 @@ header img:nth-child(3){
   display: none;
 }
 h1 {
-  font-size: 20px;
-  width: 300px;
+  font-size: 25px;
+  width: 330px;
 }
 header input {
   background-color: white;
   height: 35px;
   margin-bottom: 30px;
   margin-top: 30px;
-  width: 300px;
+  width: 330px;
+}
+.tablette {
+  display: none;
 }
 
 /*menu dans le header*/
@@ -97,7 +100,6 @@ article a {
    text-decoration: none;
  }
 
-
 /*figure du main*/
 figure{
   margin:0;
@@ -126,6 +128,9 @@ figure input {
   border-radius: 5px;
 }
 /*liste déroulante du footer*/
+#footertablette {
+  display: none;
+}
 footer {
   margin-top: 50px;
   margin-bottom: 100px;
@@ -141,7 +146,7 @@ footer form {
   background-color: white;
   width: 150px;
   height: 50px;
-  margin-right: 30px;
+  margin-right: 40px;
   font-size: 18px;
 }
 #devise{
@@ -149,6 +154,7 @@ footer form {
   width: 150px;
   height: 50px;
   font-size: 18px;
+  margin-right: 20px;
 }
 /*bas du footer*/
 #icon {
@@ -167,4 +173,76 @@ footer form {
 }
 #reseaux {
 margin-top: 5px;
+}
+
+@media (min-width:760px) {
+
+h1 {
+  width: 100%;
+  font-size: 50px;
+}
+header input {
+  display: none;
+}
+#loupe {margin-top: 75px;
+}
+
+figure img {
+  position: absolute;
+  right: 15px;
+  margin-top: 0px;}
+
+.tablette {
+  display: inline-flex;
+  width: 240px;
+  padding-left: 30px;
+  margin-top: 60px;
+  height: 50px;
+  font-size: 15px;
+}
+#footertablette {
+  display:inline-block;
+  position: absolute;
+  right: 10px;
+
+}
+.footertablette {
+  display: inline-block;
+  margin-right: 20px;
+}
+footer form {
+  display: inline-block;
+}
+#langue {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+#devise {
+  display: block;
+}
+#icon {
+  margin-top: 50px;
+  position: absolute;
+}
+.lienfooter {
+  list-style: none;
+  }
+.lienfooter li a {
+  text-decoration: none;
+}
+h3{
+  padding-left: 40px;
+  margin-bottom: 0;
+}
+#lien {
+  position: absolute;
+  right: 10px;
+  margin-top: 60px;
+}
+#reseaux {
+  position: absolute;
+  right: 10px;
+  margin-top: 80px;
+  margin-bottom: 100px;}
 }
