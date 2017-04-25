@@ -5,120 +5,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <title>Locations de vancance</title>
 </head>
 <body>
 
   <header>
-    <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/Airbnb_phone.png"/>
-    <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/Airbnb_tablette.png"/>
-    <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/airbnb_desk.ico"/>
+    <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/logoiphone.ico" alt="logo"/>
+    <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/Airbnb_tablette.png" alt="logo"/>
+    <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/airbnb_desk.ico" alt="logo"/>
       <h1><span>Airbnb</span> Réservez des logements uniques et vivez là-bas comme des locaux.</h1>
-        <input type="button" value="Partout. Dates indifférentes. 1 voyageur"/>
+        <img id="loupe" src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/search.svg"/>
+          <input type="button" value="Partout. Dates indifférentes. 1 voyageur"/>
+
+          <input class="tablette" type="button" value="Partout"/>
+          <input class="tablette" type="button" value="Dates indifférentes"/>
+          <input class="tablette" type="button" value="1 voyageur"/>
+
+          <form id="desktop">
+            <div class="desktop">
+            <label for="où">Où</label> <input id="partout" type="text" placeholder="Partout"/>
+            </div>
+            <div class="desktop">
+            <label for="Quand">Quand</label> <input id="quand" type="button" value="Dates indifférentes"/>
+            </div>
+            <div class="desktop">
+            <label for="Voyageurs">Voyageurs</label> <input id="voyageur" type="button" value="1 Voyageur"/>
+            <input id="search" type="button" value="Rechercher"/>
+            </div>
+          </form>
+
+
           <nav>
-            <ul>
-              <li><a href"">Recommandé</a></li>
-              <li><a href"">Logements</a></li>
-              <li><a href"">Experiences</a></li>
-              <li><a href"">lieux</a></li>
+            <ul id="navigation">
+              <li><a href="">Recommandé</a></li>
+              <li><a href="">Logements</a></li>
+              <li><a href="">Experiences</a></li>
+              <li><a href="">lieux</a></li>
             </ul>
           </nav>
   </header>
 
   <main>
     <section>
-      <h2>Réservé à l'instant</h2>
+      <h2>Réservées à l'instant</h2>
+        <article>
         <a href="">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/reserve1.jpeg" alt="boat"/>
+          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/reserve1.jpg" alt="boat"/>
             <p>65€ Sip vermouth after a scenic sail</p>
         </a>
-        <a href"">
+        <a href="">
           <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/reserve2.jpg" alt="book"/>
             <p>92€ Writing in the company of fellow literati</p>
         </a>
-        <a href"">
+        <a href="">
           <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/reserve3.jpg" alt="cooking"/>
             <p>119€ Cooking class in the Countryside</p>
         </a>
-        <a href"">
+        <a href="">
           <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/reserve4.jpg" alt="tapas"/>
             <p>75€ Indulge in local tapas with foodies</p>
         </a>
-        <a href"">
+        <a href="">
           <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/reserve5.jpg" alt="flower"/>
             <p>99€ Rome's secret gardens unveiled during floral class</p>
         </a>
+      </article>
     </section>
     <section>
       <h2>Expériences</h2>
-        <a href="">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/experiences1.jpg" alt="bike"/>
-            <p>97€ Experience the Mission's best by bike</p>
-        </a>
-        <a href"">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/experiences2.jpg" alt="food"/>
-            <p>65€ An authentic market food experience!</p>
-        </a>
-        <a href"">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/experiences3.jpg" alt="cooking"/>
-            <p>63€ Find comedy's next stars with the LA comedy expert</p>
-        </a>
-        <a href"">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/experiences4.jpg" alt="surf"/>
-            <p>193€ Wakesurf and Wakeboard with a local adventurer</p>
-        </a>
-        <a href"">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/experiences5.jpg" alt="flower"/>
-            <p>165€ Race an America's Cup yacht!</p>
-        </a>
+        <article>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/experiences1.jpg" alt="bike"/>
+              <p>97€ Experience the Mission's best by bike</p>
+          </a>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/experiences2.jpg" alt="food"/>
+              <p>65€ An authentic market food experience!</p>
+          </a>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/experiences3.jpg" alt="cooking"/>
+              <p>63€ Find comedy's next stars with the LA comedy expert</p>
+          </a>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/experiences4.jpg" alt="surf"/>
+              <p>193€ Wakesurf and Wakeboard with a local adventurer</p>
+          </a>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/experiences5.jpg" alt="flower"/>
+              <p>165€ Race an America's Cup yacht!</p>
+          </a>
+        </article>
     </section>
     <section>
       <h2>Logements</h2>
-        <a href="">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/logements1.jpg" alt="swimming pool"/>
-            <p>510€ HERCE PROPERTY - Minimalist Experience Logement entier · 4 lits</p>
-        </a>
-        <a href"">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/logements2.jpg" alt="cabin"/>
-            <p>170€ Adorable cabin close to the lake Logement entier · 3 lits</p>
-        </a>
-        <a href"">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/logements3.jpg" alt="villa"/>
-            <p>174€ 180° VIEW, PRIVATE POOL VILLA.. Logement entier · 4 lits</p>
-        </a>
+        <article>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/logements1.jpg" alt="swimming pool"/>
+              <p>510€ HERCE PROPERTY - Minimalist Experience Logement entier · 4 lits</p>
+          </a>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/logements2.jpg" alt="cabin"/>
+              <p>170€ Adorable cabin close to the lake Logement entier · 3 lits</p>
+          </a>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/logements3.jpg" alt="villa"/>
+              <p>174€ 180° VIEW, PRIVATE POOL VILLA.. Logement entier · 4 lits</p>
+          </a>
+        </article>
     </section>
     <section>
       <h2>Destinations à la une</h2>
-        <a href"">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/losangeles1.jpeg" alt="los angeles"/>
-            <p>Los Angeles</p>
-        </a>
-        <a href"">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/paris1.jpeg" alt="paris"/>
-            <p>Paris</p>
-        </a>
-        <a href"">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/tokyo1.jpeg" alt="tokyo"/>
-            <p>Tokyo</p>
-        </a>
-        <a href"">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/florence1.jpeg" alt="florence"/>
-            <p>Florence</p>
-        </a>
-        <a href"">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/londres1.jpeg" alt="londres"/>
-            <p>Londres</p>
-        </a>
-        <a href"">
-          <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/sanfrancisco1.jpeg" alt="sanfrancisco"/>
-            <p>San Francisco</p>
-        </a>
+        <article>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/losangeles1.jpeg" alt="los angeles"/>
+              <p>Los Angeles</p>
+          </a>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/paris1.jpeg" alt="paris"/>
+              <p>Paris</p>
+          </a>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/tokyo1.jpeg" alt="tokyo"/>
+              <p>Tokyo</p>
+          </a>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/florence1.jpeg" alt="florence"/>
+              <p>Florence</p>
+          </a>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/londres1.jpeg" alt="londres"/>
+              <p>Londres</p>
+          </a>
+          <a href="">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/sanfrancisco1.jpeg" alt="sanfrancisco"/>
+              <p>San Francisco</p>
+          </a>
+        </article>
     </section>
 
     <figure>
-      <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/estimermesrevenus1.jpg" alt="accueil voyageur"/>
-        <h2>Ouvrez la porte à un voyageur et à une nouvelle vie</h2>
-          <p>Compléter vos revenus en accueillant des voyageurs</p>
+      <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/estimermesrevenus1.jpeg" alt="accueil voyageur"/>
+        <h2>Ouvrez la porte à un<br>voyageur et à une nouvelle<br>vie</h2>
+          <p>Compléter vos revenus en accueillant<br>des voyageurs</p>
             <input type="button" value="Estimer mes revenus"/>
     </figure>
   </main>
@@ -136,15 +165,51 @@
         <option value="AED">AED</option>
       </select>
     </form>
+
+    <div id="footertablette">
+      <section class="footertablette">
+      <h3>Airbnb</h3>
+        <nav>
+          <ul class="lienfooter">
+            <li><a href"">A propos</a></li>
+            <li><a href"">Carrières</a></li>
+            <li><a href"">Presse</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footertablette">
+        <h3>Découvrir</h3>
+          <nav>
+            <ul class="lienfooter">
+              <li><a href"">Confinace et<br>sécurité</a></li>
+              <li><a href"">Crédit voyage</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="footertablette">
+          <h3>Hébergement</h3>
+            <nav>
+              <ul class="lienfooter">
+                <li><a href"">Pourquoi être<br>hôte</a></li>
+                <li><a href"">Hospitalité</a></li>
+              </ul>
+            </nav>
+          </section>
+      </div>
+
     <div id="icon">
-      <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/airbnb.png"/>
+      <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/iconairbnb.png" alt="icon airbnb"/>
         <p>Airbnb, Inc</p>
+    </div>
+    <div id="lien">
           <a href="">Conditions</a>
           <a href="">Politique de Confidentialité</a>
-            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/fb.png"/>
-            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/twitter.png"/>
-            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/insta-hover.svg"/>
-    <div>
+    </div>
+    <div id="reseaux">
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/fb.png" alt="icon fb"/>
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/twitter.png" alt="icon twitter"/>
+            <img src="/home/cindy/sites/prod/projetsemaine05/airbnb/imagesdusite/insta-hover.svg" alt="icon instagram"/>
+    </div>
   </footer>
 </body>
 </html>
